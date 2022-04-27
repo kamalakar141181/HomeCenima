@@ -42,6 +42,7 @@ namespace HomeCinema.Web.Infrastructure.Extensions
             plot.IsAvailable = plotVm.IsAvailable;
             plot.Rate = plotVm.Rate;
             plot.TotalAmount = plotVm.TotalAmount;
+            plot.PlotDetails = plotVm.PlotDetails;
         }
     }
 }

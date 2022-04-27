@@ -1,12 +1,33 @@
-﻿<div class="row">
-    <form class="form-signin" role="form" novalidate angular-validator name="userRegistrationForm" angular-validator-submit="register()">
-        <h3 class="form-signin-heading">Plot Creation <label class="label label-danger">Admin</label></h3>
-        <div class="form-group">
-            <label for="inputUsername" class="">Plot ID</label>
-            <input type="text" name="inputUsername" class="form-control" ng-model="plotCreation.ID" 
-                   placeholder="Username" validate-on="blur" required required-message="'Plot ID is required'">
+﻿<hr />
+
+<div class="row">
+    <form role="form" novalidate angular-validator name="addPlotForm" angular-validator-submit="Register()">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="ID">ID</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="newPlot.ID" name="ID" id="ID" placeholder="ID"
+                           validate-on="blur" required required-message="'ID is required'">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="PlotArea">Plot Area</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="newPlot.PlotArea" name="PlotArea" id="PlotArea" placeholder="Plot Area"
+                           validate-on="blur" required required-message="'Plot Area is required'">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="PlotDetails">Plot Details</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="newPlot.PlotDetails" id="PlotDetails" name="PlotDetails" placeholder="Plot Details"
+                           validate-on="blur" required required-message="'Email is required'">
+                </div>
+            </div>
+            
+            <input type="submit" name="submit" id="submit" value="Plot Submit" class="btn btn-info pull-right">
         </div>
-        
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
     </form>
+    
 </div>

@@ -12,7 +12,7 @@ namespace HomeCinema.Entities
         public decimal PlotArea { get; set; }
         public bool IsAvailable { get; set; }
         public decimal Rate { get; set; }
-        public decimal TotalAmount { get; set; }        
-        public string PlotDetails { get; set; }       
+        public decimal TotalAmount { get; set; }
+        public string PlotDetails { get; set; }
     }
 }

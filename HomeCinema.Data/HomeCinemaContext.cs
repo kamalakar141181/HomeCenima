@@ -29,7 +29,7 @@ namespace HomeCinema.Data
         public IDbSet<Stock> StockSet { get; set; }
         public IDbSet<Rental> RentalSet { get; set; }
         public IDbSet<Error> ErrorSet { get; set; }
-        public IDbSet<Plot> PlotEntitySet { get; set; }
+        public IDbSet<Plot> PlotSet { get; set; }
         #endregion
 
         public virtual void Commit()

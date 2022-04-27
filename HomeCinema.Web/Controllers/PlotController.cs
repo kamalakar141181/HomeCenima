@@ -6,12 +6,9 @@ using HomeCinema.Web.Infrastructure.Core;
 using HomeCinema.Web.Models;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web;
 using System.Web.Http;
 using HomeCinema.Web.Infrastructure.Extensions;
 using HomeCinema.Data.Extensions;
@@ -31,40 +28,11 @@ namespace HomeCinema.Web.Controllers
             _plotRepository = plotRepository;
         }
 
-        [HttpPost]
-        [Route("update")]
-        public HttpResponseMessage Update(HttpRequestMessage request, PlotViewModel plot)
-        {
-            return CreateHttpResponse(request, () =>
-            {
-                HttpResponseMessage response = null;
-
-                if (!ModelState.IsValid)
-                {
-                    response = request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
-                    var plotDb = _plotRepository.GetSingle(plot.ID);
-                    if (plotDb == null)
-                        response = request.CreateErrorResponse(HttpStatusCode.NotFound, "Invalid plot.");
-                    else
-                    {
-                        plotDb.UpdatePlot(plot);                        
-                        _plotRepository.Edit(plotDb);
-
-                        _unitOfWork.Commit();
-                        response = request.CreateResponse<PlotViewModel>(HttpStatusCode.OK, plot);
-                    }
-                }
-
-                return response;
-            });
-        }
+        
 
         [HttpPost]
         [Route("plot")]
-        public HttpResponseMessage plotCreation(HttpRequestMessage request, PlotViewModel plot)
+        public HttpResponseMessage Plot(HttpRequestMessage request, PlotViewModel plotViewModel)
         {
             return CreateHttpResponse(request, () =>
             {
@@ -78,13 +46,24 @@ namespace HomeCinema.Web.Controllers
                 }
                 else
                 {
-                    if (_plotRepository.PlotExists(12))
+                    if (_plotRepository.PlotExists(plotViewModel.ID))
                     {
                         ModelState.AddModelError("Invalid plot", "Plot Number already exists");
                         response = request.CreateResponse(HttpStatusCode.BadRequest,
                         ModelState.Keys.SelectMany(k => ModelState[k].Errors)
                               .Select(m => m.ErrorMessage).ToArray());
-                    }                    
+                    }
+                    else
+                    {
+                        Plot newPlot = new Plot();
+                        newPlot.UpdatePlot(plotViewModel);
+                        _plotRepository.Add(newPlot);
+                        _unitOfWork.Commit();
+                        // Update view model
+                        plotViewModel = Mapper.Map<Plot, PlotViewModel>(newPlot);
+                        response = request.CreateResponse<PlotViewModel>(HttpStatusCode.Created, plotViewModel);
+
+                    }
                 }
 
                 return response;

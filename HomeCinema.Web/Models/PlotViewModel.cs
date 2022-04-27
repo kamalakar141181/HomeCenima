@@ -1,12 +1,15 @@
 ﻿using HomeCinema.Web.Infrastructure.Validators;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace HomeCinema.Web.Models
 {
+    [Bind(Exclude = "UniqueKey")]
     public class PlotViewModel : IValidatableObject
     {
         public int ID { get; set; }

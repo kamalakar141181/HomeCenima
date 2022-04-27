@@ -87,6 +87,12 @@ namespace HomeCinema.Web.Infrastructure.Core
             {
                 _stocksRepository = _dataRepositoryFactory.GetDataRepository<Stock>(RequestMessage);
             }
+
+            if (entities.Any(e => e.FullName == typeof(Plot).FullName))
+            {
+                _plotRepository = _dataRepositoryFactory.GetDataRepository<Plot>(RequestMessage);
+            }
+
         }
 
         private void LogError(Exception ex)

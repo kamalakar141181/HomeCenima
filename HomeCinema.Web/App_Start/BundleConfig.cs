@@ -54,6 +54,7 @@ namespace HomeCinema.Web.App_Start
                 "~/Scripts/spa/home/indexCtrl.js",
                 "~/Scripts/spa/customers/customersCtrl.js",
                 "~/Scripts/spa/customers/customersRegCtrl.js",
+                "~/Scripts/spa/plot/plotCreationCtrl.js",
                 "~/Scripts/spa/customers/customerEditCtrl.js",
                 "~/Scripts/spa/movies/moviesCtrl.js",
                 "~/Scripts/spa/movies/movieAddCtrl.js",

@@ -32,6 +32,8 @@ namespace HomeCinema.Web.Mappings
             Mapper.CreateMap<Stock, StockViewModel>();
 
             Mapper.CreateMap<Rental, RentalViewModel>();
+
+            Mapper.CreateMap<Plot, PlotViewModel>();
         }
     }
 }
