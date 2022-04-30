@@ -12,6 +12,7 @@ namespace HomeCinema.Data.Configurations
         public PlotConfiguration()
         {
             Property(m => m.ID).IsRequired();
+            Property(m => m.PlotID).IsRequired();
             Property(m => m.PlotArea).IsRequired();
             Property(m => m.IsAvailable).IsRequired();
             Property(m => m.Rate).IsRequired();

@@ -38,6 +38,7 @@ namespace HomeCinema.Web.Infrastructure.Extensions
         public static void UpdatePlot(this Plot plot, PlotViewModel plotVm)
         {
             plot.ID = plotVm.ID;
+            plot.PlotID = plotVm.PlotID;
             plot.PlotArea = plotVm.PlotArea;
             plot.IsAvailable = plotVm.IsAvailable;
             plot.Rate = plotVm.Rate;

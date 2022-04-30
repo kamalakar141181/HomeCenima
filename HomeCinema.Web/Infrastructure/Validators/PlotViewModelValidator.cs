@@ -11,7 +11,7 @@ namespace HomeCinema.Web.Infrastructure.Validators
     {
         public PlotViewModelValidator()
         {
-            RuleFor(r => r.ID).NotEmpty()
+            RuleFor(r => r.PlotID).NotEmpty()
                 .WithMessage("Plot ID should not be empty");
 
             RuleFor(r => r.PlotArea).NotEmpty()

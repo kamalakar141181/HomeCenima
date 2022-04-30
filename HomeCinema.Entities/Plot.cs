@@ -9,6 +9,7 @@ namespace HomeCinema.Entities
     public class Plot : IEntityBase
     {
         public int ID { get; set; }
+        public int PlotID { get; set; }
         public decimal PlotArea { get; set; }
         public bool IsAvailable { get; set; }
         public decimal Rate { get; set; }

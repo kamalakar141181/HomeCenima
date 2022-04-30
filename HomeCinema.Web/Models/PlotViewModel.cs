@@ -13,6 +13,7 @@ namespace HomeCinema.Web.Models
     public class PlotViewModel : IValidatableObject
     {
         public int ID { get; set; }
+        public int PlotID { get; set; }
         public decimal PlotArea { get; set; }
         public bool IsAvailable { get; set; }
         public decimal Rate { get; set; }
