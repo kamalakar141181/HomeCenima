@@ -45,5 +45,19 @@ namespace HomeCinema.Web.Infrastructure.Extensions
             plot.TotalAmount = plotVm.TotalAmount;
             plot.PlotDetails = plotVm.PlotDetails;
         }
+
+        public static void UpdateTransactionMode(this TransactionModeEntity transactionModeEntity, TransactionModeViewModel transactionModeVm)
+        {
+            transactionModeEntity.ID = transactionModeVm.ID;
+            transactionModeEntity.TransactionModeName = transactionModeVm.TransactionModeName;
+            transactionModeEntity.TransactionModeDescription = transactionModeVm.TransactionModeDescription;
+
+            transactionModeEntity.CreatedBy = transactionModeVm.CreatedBy;
+            transactionModeEntity.CreatedDate = transactionModeVm.CreatedDate;
+            transactionModeEntity.ModifiedBy = transactionModeVm.ModifiedBy;
+
+            transactionModeEntity.ModifiedDate = transactionModeVm.ModifiedDate;
+            transactionModeEntity.DeleteFlag = transactionModeVm.DeleteFlag;
+        }
     }
 }

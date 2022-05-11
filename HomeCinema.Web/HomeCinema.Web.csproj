@@ -212,6 +212,9 @@
     <Content Include="Scripts\spa\services\fileUploadService.js" />
     <Content Include="Scripts\spa\services\membershipService.js" />
     <Content Include="Scripts\spa\services\notificationService.js" />
+    <Content Include="Scripts\spa\TransactionModeUIPages\TransactionModeSearch.html" />
+    <Content Include="Scripts\spa\TransactionModeUIPages\TransactionModeSearchCtrl.js" />
+    <Content Include="Scripts\spa\MyUIFolder\MyHtml.html" />
     <Content Include="Scripts\vendors\angucomplete-alt.min.js" />
     <Content Include="Scripts\vendors\angular-base64.js" />
     <Content Include="Scripts\vendors\angular-cookies.js" />
@@ -252,6 +255,7 @@
     <Compile Include="Controllers\RentalsExtendedController.cs" />
     <Compile Include="Controllers\RentalsController.cs" />
     <Compile Include="Controllers\StocksController.cs" />
+    <Compile Include="Controllers\TransactionModeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -271,6 +275,7 @@
     <Compile Include="Infrastructure\Validators\PlotViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\StockViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\MovieViewModelValidator.cs" />
+    <Compile Include="Infrastructure\Validators\TransactionModeValidator.cs" />
     <Compile Include="Mappings\AutoMapperConfiguration.cs" />
     <Compile Include="Mappings\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Mappings\DomainToViewModelMappingProfile.cs" />
@@ -284,6 +289,7 @@
     <Compile Include="Models\StockViewModel.cs" />
     <Compile Include="Models\MovieViewModel.cs" />
     <Compile Include="Models\TotalRentalHistoryViewModel.cs" />
+    <Compile Include="Models\TransactionModeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -300,6 +306,7 @@
     <Content Include="Content\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts\FontAwesome.otf" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="App_Data\Building Single Page Applications using Web API and angularJS.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

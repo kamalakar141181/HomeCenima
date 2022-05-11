@@ -30,6 +30,7 @@ namespace HomeCinema.Data
         public IDbSet<Rental> RentalSet { get; set; }
         public IDbSet<Error> ErrorSet { get; set; }
         public IDbSet<Plot> PlotSet { get; set; }
+        public IDbSet<TransactionModeEntity> TransactionModeSet { get; set; }
         #endregion
 
         public virtual void Commit()
@@ -49,6 +50,8 @@ namespace HomeCinema.Data
             modelBuilder.Configurations.Add(new StockConfiguration());
             modelBuilder.Configurations.Add(new RentalConfiguration());
             modelBuilder.Configurations.Add(new PlotConfiguration());
+            modelBuilder.Configurations.Add(new TransactionModeConfiguration());
+            modelBuilder.Entity<TransactionModeEntity>().ToTable("TransactionMode");
         }
     }
 }

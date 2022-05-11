@@ -62,12 +62,14 @@
     <Compile Include="Configurations\RoleConfiguration.cs" />
     <Compile Include="Configurations\CustomerConfiguration.cs" />
     <Compile Include="Configurations\StockConfiguration.cs" />
+    <Compile Include="Configurations\TransactionModeConfiguration.cs" />
     <Compile Include="Configurations\UserRoleConfiguration.cs" />
     <Compile Include="Configurations\UserConfiguration.cs" />
     <Compile Include="Extensions\PlotExtensions.cs" />
     <Compile Include="Extensions\RentalExtensions.cs" />
     <Compile Include="Extensions\StockExtensions.cs" />
     <Compile Include="Extensions\CustomerExtensions.cs" />
+    <Compile Include="Extensions\TransactionModeExtensions.cs" />
     <Compile Include="HomeCinemaContext.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />

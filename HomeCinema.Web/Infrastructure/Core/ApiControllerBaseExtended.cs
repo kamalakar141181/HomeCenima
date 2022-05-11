@@ -24,6 +24,7 @@ namespace HomeCinema.Web.Infrastructure.Core
         protected IEntityBaseRepository<Stock> _stocksRepository;
         protected IEntityBaseRepository<Customer> _customersRepository;
         protected IEntityBaseRepository<Plot> _plotRepository;
+        protected IEntityBaseRepository<TransactionModeEntity> _transactionModeRepository;
 
         protected IUnitOfWork _unitOfWork;
 
@@ -91,6 +92,11 @@ namespace HomeCinema.Web.Infrastructure.Core
             if (entities.Any(e => e.FullName == typeof(Plot).FullName))
             {
                 _plotRepository = _dataRepositoryFactory.GetDataRepository<Plot>(RequestMessage);
+            }
+
+            if (entities.Any(e => e.FullName == typeof(TransactionModeEntity).FullName))
+            {
+                _transactionModeRepository = _dataRepositoryFactory.GetDataRepository<TransactionModeEntity>(RequestMessage);
             }
 
         }
