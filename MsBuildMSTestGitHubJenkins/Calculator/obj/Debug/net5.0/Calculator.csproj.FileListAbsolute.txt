@@ -1,0 +1,16 @@
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\bin\Debug\net5.0\Calculator.exe
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\bin\Debug\net5.0\Calculator.deps.json
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\bin\Debug\net5.0\Calculator.runtimeconfig.json
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\bin\Debug\net5.0\Calculator.runtimeconfig.dev.json
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\bin\Debug\net5.0\Calculator.dll
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\bin\Debug\net5.0\ref\Calculator.dll
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\bin\Debug\net5.0\Calculator.pdb
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfoInputs.cache
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfo.cs
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.csproj.CoreCompileInputs.cache
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.dll
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\ref\Calculator.dll
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.pdb
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.genruntimeconfig.cache
+F:\Lab2022\MsBuildMSTestGitHubJenkins\Calculator\obj\Debug\net5.0\Calculator.csproj.AssemblyReference.cache

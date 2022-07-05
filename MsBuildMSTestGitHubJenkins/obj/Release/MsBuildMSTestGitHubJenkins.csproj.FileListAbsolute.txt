@@ -1,0 +1,7 @@
+F:\Lab2022\MsBuildMSTestGitHubJenkins\bin\Release\MsBuildMSTestGitHubJenkins.exe.config
+F:\Lab2022\MsBuildMSTestGitHubJenkins\bin\Release\MsBuildMSTestGitHubJenkins.exe
+F:\Lab2022\MsBuildMSTestGitHubJenkins\bin\Release\MsBuildMSTestGitHubJenkins.pdb
+F:\Lab2022\MsBuildMSTestGitHubJenkins\obj\Release\MsBuildMSTestGitHubJenkins.csproj.AssemblyReference.cache
+F:\Lab2022\MsBuildMSTestGitHubJenkins\obj\Release\MsBuildMSTestGitHubJenkins.csproj.CoreCompileInputs.cache
+F:\Lab2022\MsBuildMSTestGitHubJenkins\obj\Release\MsBuildMSTestGitHubJenkins.exe
+F:\Lab2022\MsBuildMSTestGitHubJenkins\obj\Release\MsBuildMSTestGitHubJenkins.pdb
